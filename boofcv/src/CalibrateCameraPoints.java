@@ -41,7 +41,7 @@ public class CalibrateCameraPoints {
 
 	public static void main( String args[] ) throws IOException {
 		// todo load file a file instead
-		PlanarCalibrationTarget targetDesc = FactoryPlanarCalibrationTarget.gridChess(3, 4, 30);
+		PlanarCalibrationTarget targetDesc = FactoryPlanarCalibrationTarget.gridChess(5,7, 30);
 		CalibrationPlanarGridZhang99 zhang99 =
 				new CalibrationPlanarGridZhang99(targetDesc,true,2);
 

@@ -15,10 +15,10 @@ all: $(SRC) $(CALIB)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 calib_pts: load_files.o calib_from_pts.o
-	$(CC) $(LDFLAGS) -o calib_pts calib_from_pts.o $(OBJS) $(CPPFLAGS)
+	$(CC) -o calib_pts calib_from_pts.o $(OBJS) $(LDFLAGS) $(CPPFLAGS)
 
 detect_pts: load_files.o detect_calib_points.o
-	$(CC) $(LDFLAGS) -o detect_pts detect_calib_points.o $(OBJS) $(CPPFLAGS)
+	$(CC) -o detect_pts detect_calib_points.o $(OBJS) $(LDFLAGS) $(CPPFLAGS)
 
 clean:
 	rm -f *~ *.o $(CALIB)

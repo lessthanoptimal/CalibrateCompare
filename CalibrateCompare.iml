@@ -4,31 +4,14 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/boofcv/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/BoofCV.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../../boofcv/main/ip/src" />
-          <root url="file://$MODULE_DIR$/../../boofcv/main/calibration/src" />
-          <root url="file://$MODULE_DIR$/../../boofcv/main/io/src" />
-          <root url="file://$MODULE_DIR$/../../boofcv/main/geo/src" />
-          <root url="file://$MODULE_DIR$/../../boofcv/main/feature/src" />
-          <root url="file://$MODULE_DIR$/../../boofcv/main/visualize/src" />
-          <root url="file://$MODULE_DIR$/../../boofcv/main/sfm/src" />
-          <root url="file://$MODULE_DIR$/../../boofcv/main/numerics/src" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/EJML.jar!/" />
+          <root url="jar://$MODULE_DIR$/boofcv/lib/BoofCV.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -37,7 +20,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/GeoRegression.jar!/" />
+          <root url="jar://$MODULE_DIR$/boofcv/lib/DDogleg.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -46,7 +29,25 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/libpja.jar!/" />
+          <root url="jar://$MODULE_DIR$/boofcv/lib/EJML.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/boofcv/lib/GeoRegression.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/boofcv/lib/xstream-1.4.5-SNAPSHOT.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

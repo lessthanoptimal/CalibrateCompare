@@ -1,6 +1,6 @@
+import boofcv.abst.calib.CalibrateMonoPlanar;
+import boofcv.abst.calib.ImageResults;
 import boofcv.alg.geo.calibration.Zhang99Parameters;
-import boofcv.app.CalibrateMonoPlanar;
-import boofcv.app.ImageResults;
 import boofcv.factory.calib.FactoryPlanarCalibrationTarget;
 import georegression.struct.point.Point2D_F64;
 
@@ -64,7 +64,7 @@ public class ComputeErrorStatistics {
 
 		List<List<Point2D_F64>> obs = CalibrateCameraPoints.loadObservations(fileObservation);
 		Zhang99Parameters param = loadCalibration(fileResults);
-		List<Point2D_F64> grid = FactoryPlanarCalibrationTarget.gridChess(3,4,30).points;  // todo replace with file load
+		List<Point2D_F64> grid = FactoryPlanarCalibrationTarget.gridChess(5,7,30).points;  // todo replace with file load
 
 		List<ImageResults> results = CalibrateMonoPlanar.computeErrors(obs, param, grid);
 

@@ -1,3 +1,4 @@
+import boofcv.abst.calib.ConfigChessboard;
 import boofcv.abst.calib.PlanarCalibrationDetector;
 import boofcv.core.image.ConvertBufferedImage;
 import boofcv.factory.calib.FactoryPlanarCalibrationTarget;
@@ -21,7 +22,7 @@ public class DetectTargetFeatures {
 
 	public static void main( String args[] ) throws FileNotFoundException {
 		// detects the calibration target points
-		PlanarCalibrationDetector detector = FactoryPlanarCalibrationTarget.detectorChessboard(3, 4, 6);
+		PlanarCalibrationDetector detector = FactoryPlanarCalibrationTarget.detectorChessboard(new ConfigChessboard(5, 7));
 
 		// load image list
 		String directory = "../images/stereo/Bumblebee2_Chess";
